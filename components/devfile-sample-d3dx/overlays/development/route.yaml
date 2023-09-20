@@ -1,0 +1,20 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: devfile-sample-d3dx
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: devfile-sample-d3dx
+    app.kubernetes.io/part-of: ci10t-776-0072-app
+  name: devfile-sample-d3dxojlk
+spec:
+  path: /
+  port:
+    targetPort: 3001
+  to:
+    kind: Service
+    name: devfile-sample-d3dx
+    weight: null
+status: {}
