@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: devfile-sample-d3dx
     spec:
       containers:
-      - image: nodejs-image:latest
+      - image: quay.io/pmacik-testing/ci10t-776-0072-tenant/ci10t-776-0072-app/devfile-sample-d3dx@sha256:790e2d60c9dd715e8f5e7589cd8a2b73034124c7eb41ad20b11bd2ab6b75d2da
         name: my-nodejs
         ports:
         - containerPort: 3001
